@@ -51,7 +51,7 @@ function showLog(logValues, showElement) {
     //如果定位指针不是-1 （-1是最后一条记录） ， 就调用延时方式调用slidenShow函数显示下一条记录，
     //比形成动画效果。
     if (pos[0] != -1)
-        setTimeout("showLog(logValues,showDiv", 500)
+        setTimeout("showLog(logValues,showDiv)", 500)
 }
 //插入排序
 function insertSort(str) {
@@ -84,5 +84,5 @@ function showLog(logValues, showElement) {
     }
     showElement.innerHTML = str
     if (pos[0] != -1)
-        setTimeout("showLog(logValues,showDiv", 500)
+        setTimeout("showLog(logValues,showDiv)", 500)
 }
