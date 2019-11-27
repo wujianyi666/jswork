@@ -1,0 +1,320 @@
+{
+  "id": "114e493c-178e-4a48-a766-7eca7e426218",
+  "version": "2.0",
+  "name": "work12",
+  "url": "http://127.0.0.1:8080",
+  "tests": [{
+    "id": "881e82a6-9a0a-456f-9bb4-eae7926951e2",
+    "name": "年历",
+    "commands": [{
+      "id": "33e3713f-2ed5-4151-a860-25846a715590",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8c22db1-7695-47b5-8227-4570897e4de9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "730x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9944569a-2459-4645-8341-29ff1fb8434c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work12')]",
+      "targets": [
+        ["linkText=work11 万年历", "linkText"],
+        ["css=a:nth-child(26)", "css:finder"],
+        ["xpath=//a[contains(text(),'work11 万年历')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work11-o/index.html')]", "xpath:href"],
+        ["xpath=//a[13]", "xpath:position"],
+        ["xpath=//a[contains(.,'work11 万年历')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "460ba034-6917-4139-9252-56385281f9fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(1) th",
+      "targets": [
+        ["css=table:nth-child(1) th", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'2019 年 1 月')]", "xpath:innerText"]
+      ],
+      "value": "2019年1月"
+    }, {
+      "id": "ae91f4e6-5fa2-4f2a-87a7-29feb7ac8cdf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(1) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=table:nth-child(1) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table/tbody/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": "1"
+    }, {
+      "id": "c6b8d339-1a88-4c76-b458-21f9db7686ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(12) th",
+      "targets": [
+        ["css=table:nth-child(12) th", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table[12]/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//table[12]/tbody/tr/th", "xpath:position"],
+        ["xpath=//th[contains(.,'2019年12月')]", "xpath:innerText"]
+      ],
+      "value": "2019年12月"
+    }, {
+      "id": "512ff9f7-8de3-4184-bf11-24af8001c032",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(12) tr:nth-child(7) > td:nth-child(3)",
+      "targets": [
+        ["css=table:nth-child(12) tr:nth-child(7) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table[12]/tbody/tr[7]/td[3]", "xpath:idRelative"],
+        ["xpath=//table[12]/tbody/tr[7]/td[3]", "xpath:position"]
+      ],
+      "value": "31"
+    }, {
+      "id": "d3880dc7-be00-434f-ab2f-682f5d65d7e6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9f898b85-2096-488c-a336-73904a65dfb4",
+    "name": "万年历",
+    "commands": [{
+      "id": "2a7540aa-c36b-4597-b829-39e1729aab2a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6128084-1560-4643-9a5e-baf75451fad0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "730x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c720b905-7911-4e6d-9ce2-e7ad516e549e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work12-1')]",
+      "targets": [
+        ["linkText=work11 万年历", "linkText"],
+        ["css=a:nth-child(26)", "css:finder"],
+        ["xpath=//a[contains(text(),'work11 万年历')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work11-o/index.html')]", "xpath:href"],
+        ["xpath=//a[13]", "xpath:position"],
+        ["xpath=//a[contains(.,'work11 万年历')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5292104b-077f-4a0e-8786-51c6f428c40a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(1) th",
+      "targets": [
+        ["css=table:nth-child(1) th", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"],
+        ["xpath=//th[contains(.,'2019 年 1 月')]", "xpath:innerText"]
+      ],
+      "value": "2019年1月"
+    }, {
+      "id": "2dadfa36-cb8a-4eaa-ab95-06a6f721fac1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(1) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=table:nth-child(1) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table/tbody/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": "1"
+    }, {
+      "id": "71af7001-38ce-4b9c-b5c0-5cb8ce1f37a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(12) th",
+      "targets": [
+        ["css=table:nth-child(12) th", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table[12]/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//table[12]/tbody/tr/th", "xpath:position"],
+        ["xpath=//th[contains(.,'2019年12月')]", "xpath:innerText"]
+      ],
+      "value": "2019年12月"
+    }, {
+      "id": "37f83aef-6ad9-4b31-9a7c-a29879fc769d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(12) tr:nth-child(7) > td:nth-child(3)",
+      "targets": [
+        ["css=table:nth-child(12) tr:nth-child(7) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table[12]/tbody/tr[7]/td[3]", "xpath:idRelative"],
+        ["xpath=//table[12]/tbody/tr[7]/td[3]", "xpath:position"]
+      ],
+      "value": "31"
+    }, {
+      "id": "60cc48a5-2d52-4f26-ba92-abdb4ead9ae1",
+      "comment": "",
+      "command": "click",
+      "target": "id=preyear",
+      "targets": [
+        ["id=preyear", "id"],
+        ["css=#preyear", "css:finder"],
+        ["xpath=//span[@id='preyear']", "xpath:attributes"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'<<2018')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b6b868f-0ed9-47c2-a07f-3cf310214c01",
+      "comment": "",
+      "command": "click",
+      "target": "id=preyear",
+      "targets": [
+        ["id=preyear", "id"],
+        ["css=#preyear", "css:finder"],
+        ["xpath=//span[@id='preyear']", "xpath:attributes"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'<<2017')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43bdb6dd-1299-4835-b258-3fdde12de706",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=curyear",
+      "targets": [],
+      "value": "2017"
+    }, {
+      "id": "6307c929-e94f-4a8b-9d76-94b3e16a205c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(12) th",
+      "targets": [
+        ["css=table:nth-child(12) th", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table[12]/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//table[12]/tbody/tr/th", "xpath:position"],
+        ["xpath=//th[contains(.,'2017年12月')]", "xpath:innerText"]
+      ],
+      "value": "2017年12月"
+    }, {
+      "id": "51608eaf-7e95-474a-918f-fa7c0b2aaa0b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(12) tr:nth-child(8) > td",
+      "targets": [
+        ["css=table:nth-child(12) tr:nth-child(8) > td", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table[12]/tbody/tr[8]/td", "xpath:idRelative"],
+        ["xpath=//table[12]/tbody/tr[8]/td", "xpath:position"]
+      ],
+      "value": "31"
+    }, {
+      "id": "5ddfc8a9-36cd-4282-a089-96fe4ddc11b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=nextyear",
+      "targets": [
+        ["id=preyear", "id"],
+        ["css=#preyear", "css:finder"],
+        ["xpath=//span[@id='preyear']", "xpath:attributes"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'<<2017')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d431ae5-e783-458f-ada8-c0517cc8be81",
+      "comment": "",
+      "command": "click",
+      "target": "id=nextyear",
+      "targets": [
+        ["id=preyear", "id"],
+        ["css=#preyear", "css:finder"],
+        ["xpath=//span[@id='preyear']", "xpath:attributes"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'<<2017')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00c33679-0999-4797-9ae5-320ea941e45a",
+      "comment": "",
+      "command": "click",
+      "target": "id=nextyear",
+      "targets": [
+        ["id=preyear", "id"],
+        ["css=#preyear", "css:finder"],
+        ["xpath=//span[@id='preyear']", "xpath:attributes"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'<<2017')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69f70b5a-9af1-47e3-9de3-bd3917ab2459",
+      "comment": "",
+      "command": "click",
+      "target": "id=nextyear",
+      "targets": [
+        ["id=preyear", "id"],
+        ["css=#preyear", "css:finder"],
+        ["xpath=//span[@id='preyear']", "xpath:attributes"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'<<2017')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c031cf7-8454-427f-8402-dc8db5155ddb",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=curyear",
+      "targets": [],
+      "value": "2021"
+    }, {
+      "id": "ccbf20a1-5ed1-44ec-8b6b-b5b530ddacbc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(12) th",
+      "targets": [
+        ["css=table:nth-child(12) th", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table[12]/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//table[12]/tbody/tr/th", "xpath:position"],
+        ["xpath=//th[contains(.,'2021年12月')]", "xpath:innerText"]
+      ],
+      "value": "2021年12月"
+    }, {
+      "id": "540283c7-6aa0-4ea7-b00c-1c949fea0ab0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=table:nth-child(12) tr:nth-child(7) > td:nth-child(6)",
+      "targets": [
+        ["css=table:nth-child(12) tr:nth-child(7) > td:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='cal']/div/table[12]/tbody/tr[7]/td[6]", "xpath:idRelative"],
+        ["xpath=//table[12]/tbody/tr[7]/td[6]", "xpath:position"]
+      ],
+      "value": "31"
+    }]
+  }],
+  "suites": [{
+    "id": "654dcd21-e1d7-4147-b6c5-28823d0b4d85",
+    "name": "testwork12",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["881e82a6-9a0a-456f-9bb4-eae7926951e2", "9f898b85-2096-488c-a336-73904a65dfb4"]
+  }],
+  "urls": ["http://127.0.0.1:8080/"],
+  "plugins": []
+}
