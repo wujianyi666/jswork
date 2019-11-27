@@ -1,0 +1,196 @@
+{
+  "id": "db6b27bd-7eaa-485a-b520-abb2a20508e5",
+  "version": "2.0",
+  "name": "work10",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "87be691f-4e45-4bed-ab31-f875184e4d8b",
+    "name": "统计字符",
+    "commands": [{
+      "id": "6f88ce9b-002b-47ca-8baa-0597d7dda6ec",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4eeb05fa-6346-4fa1-ab80-0894ab684384",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "500x450",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f432ba1-29d3-498e-8f8a-ebd45584a356",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work10')]",
+      "targets": [
+        ["linkText=work10", "linkText"],
+        ["css=a:nth-child(24)", "css:finder"],
+        ["xpath=//a[contains(text(),'work10')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work10/index.html')]", "xpath:href"],
+        ["xpath=//a[12]", "xpath:position"],
+        ["xpath=//a[contains(.,'work10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd4a7609-27bc-4427-92ed-43db10740a09",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > p:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(2) > p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'待统计的字符串： ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7c97b45-02b6-40f6-a126-3c640e0d9533",
+      "comment": "",
+      "command": "type",
+      "target": "id=str",
+      "targets": [
+        ["id=str", "id"],
+        ["css=#str", "css:finder"],
+        ["xpath=//input[@id='str']", "xpath:attributes"],
+        ["xpath=//div[2]/p[2]/input", "xpath:position"]
+      ],
+      "value": "ccbbaa"
+    }, {
+      "id": "f26e4199-53bd-4ea7-9564-9ecceca41f9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > p:nth-child(3) > input",
+      "targets": [
+        ["css=div:nth-child(2) > p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@value='统计']", "xpath:attributes"],
+        ["xpath=//div[2]/p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e81ce78-4ba4-497a-834f-72ed842b300d",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [
+        ["id=result", "id"],
+        ["css=#result", "css:finder"],
+        ["xpath=//div[@id='result']", "xpath:attributes"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": "{\"a\":2,\"b\":2,\"c\":2}"
+    }]
+  }, {
+    "id": "a82f33dc-ec5c-4698-8945-a77656dc8546",
+    "name": "猴子选大王",
+    "commands": [{
+      "id": "c5270481-7ad8-49f7-8c8e-da4060589035",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f723f94-8c58-4664-81b9-4bc91cccdd4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "500x450",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "210dc38f-2daa-4d76-ae7f-7f9f90f5ec66",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'work10')]",
+      "targets": [
+        ["linkText=work10", "linkText"],
+        ["css=a:nth-child(24)", "css:finder"],
+        ["xpath=//a[contains(text(),'work10')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'work10/index.html')]", "xpath:href"],
+        ["xpath=//a[12]", "xpath:position"],
+        ["xpath=//a[contains(.,'work10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1d1914f-1513-4611-abea-07130fad85ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > p:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(1) > p:nth-child(2)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'请输入猴子的总数: ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d054110-559e-421d-8110-c2e3b64ab36e",
+      "comment": "",
+      "command": "type",
+      "target": "id=monkeytotal",
+      "targets": [
+        ["id=monkeytotal", "id"],
+        ["css=#monkeytotal", "css:finder"],
+        ["xpath=//input[@id='monkeytotal']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "053e79a3-5ba0-4741-b459-19b9dd4dac29",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > p:nth-child(3)",
+      "targets": [
+        ["css=div:nth-child(1) > p:nth-child(3)", "css:finder"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'请输入踢出第几只猴子: ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19e355e1-4517-450b-88ea-7dc19a5165d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=monkeykick",
+      "targets": [
+        ["id=monkeykick", "id"],
+        ["css=#monkeykick", "css:finder"],
+        ["xpath=//input[@id='monkeykick']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "7daac982-8a25-46cc-b5d3-af095b5f501e",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(4) > input",
+      "targets": [
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@value='选大王']", "xpath:attributes"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12f8cf7b-8f8a-4f1a-a1d2-6c5871f8436e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=monkeyking",
+      "targets": [
+        ["id=monkeyking", "id"],
+        ["css=#monkeyking", "css:finder"],
+        ["xpath=//div[@id='monkeyking']", "xpath:attributes"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "5"
+    }]
+  }],
+  "suites": [{
+    "id": "8aaee8f4-7131-46ce-b305-a472e1257c27",
+    "name": "work10任务测试",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a82f33dc-ec5c-4698-8945-a77656dc8546", "87be691f-4e45-4bed-ab31-f875184e4d8b"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
