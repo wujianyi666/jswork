@@ -33,7 +33,7 @@ $('smallBox').onmousemove = function (event) {
     }
     $('mask').style.left = maskX + 'px';
     $('mask').style.top = maskY + 'px';
-    var bigImgToMove = $('bigImg').offsetWidth - $('bi8gBox').offsetWidth;
+    var bigImgToMove = $('bigImg').offsetWidth - $('bigBox').offsetWidth;
     var maskToMove = $('smallBox').offsetWidth -$('mask').offsetWidth;
     var rate = bigImgToMove / maskToMove;
     $('bigImg').style.left = -rate * maskX + 'px';
