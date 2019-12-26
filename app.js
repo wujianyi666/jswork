@@ -10,6 +10,14 @@ app.post('/formBuilder', function (req, res) {
     res.send(req.body)
   })
 
+  let ajaxData = []
+  let count = 0
+  app.post('/ajax', function (req, res){
+      let sno = req.body.sno
+      let name = req.body.name
+      let content = req.body.content
+  })
+
 app.listen(8080, () => console.timeLog('node express 服务器已启动，监听端口：8080'))
 const openDefaultBrowser  = function (url) {
     var exec = require('child_process').exec;
