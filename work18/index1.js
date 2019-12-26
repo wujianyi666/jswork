@@ -105,7 +105,7 @@
         last: document.getElementById('page_last'),
         pageNum: document.getElementById('page_num'),
         onChange: function () {
-            Comment.ajax('http://139.9.81.203:8090/ajax?page=' + this.page, function () {
+            Comment.ajax('http://localhost:8080/ajax?page=' + this.page, function () {
                 progressBar = new ProgressBar(progressContainer);
                 progressBar.show();
             }, function (obj) {
