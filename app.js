@@ -32,9 +32,9 @@ app.post('/formBuilder', function (req, res) {
   app.get('/ajax', function (req, res){
       let page = req.query.page?Math.max(req.query.page,1):1
       let size = 5
-      let maxPage = Math.cell(ajaxData.length/size),
+      let maxpage = Math.cell(ajaxData.length/size),
       result={data:ajaxData.slice((page-1)*size,page*size),
-      maxPage:maxPage
+      maxPage:maxpage
     }
     res.json(result)
   })
