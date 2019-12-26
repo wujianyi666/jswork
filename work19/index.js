@@ -5,6 +5,13 @@ function connect(){
     ws.onopen = function(){
         document.getElementById('conn').disabled='disable';
         document.getElementById('disconn').disabled='';
-        let nickname=document.getElementById('nickname')
+        let nickname=document.getElementById('nickname').value
+        if(nickname){
+            ws.send('nickname|'+nickname)
+        }
+
+    }
+    ws.onclose = function(){
+        
     }
 }
