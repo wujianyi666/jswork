@@ -16,6 +16,27 @@ app.post('/formBuilder', function (req, res) {
       let sno = req.body.sno
       let name = req.body.name
       let content = req.body.content
+      let comment = {
+          id:count + 1,
+          sno: sno,
+          user: name,
+          time: new Date().toLocaleString(),
+          content: content
+      }
+      console.log(comment)
+      ajaxData.push(comment)
+      count = ajaxData.length
+      res.json(ajaxData)
+  })
+
+  app.get('/ajax', function (req, res){
+      let page = req.query.page?Math.max(req.query.page,1):1
+      let size = 5
+      let maxPage = Math.cell(ajaxData.length/size),
+      result={data:ajaxData.slice((page-1)*size,page*size),
+      maxPage:maxPage
+    }
+    res.json(result)
   })
 
 app.listen(8080, () => console.timeLog('node express 服务器已启动，监听端口：8080'))
