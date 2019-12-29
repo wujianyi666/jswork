@@ -21,7 +21,7 @@
         this.first.disabled = (this.page <= 1);
         this.prev.disabled = (this.page <= 1);
         this.next.disabled = (this.page >= this.maxPage);
-        this.last.disabled = (tjis.page >= this.maxPage);
+        this.last.disabled = (this.page >= this.maxPage);
         this.pageNum.innerHTML = this.page;
     };
     function Comment(obj) {
@@ -93,7 +93,7 @@
             return (isNaN(page) || (page < 1)) ? 1 : page;
         }
     };
-    var Comment = new Comment(document.getElementById('comment'));
+    var comment = new Comment(document.getElementById('comment'));
     var ProgressBar;
     var progressContainer = document.getElementById('progress');
     var PageList = new PageList({
@@ -105,7 +105,7 @@
         last: document.getElementById('page_last'),
         pageNum: document.getElementById('page_num'),
         onChange: function () {
-            Comment.ajax('http://localhost:8080/ajax?page=' + this.page, function () {
+            comment.ajax('http://localhost:8080/ajax?page=' + this.page, function () {
                 progressBar = new ProgressBar(progressContainer);
                 progressBar.show();
             }, function (obj) {
